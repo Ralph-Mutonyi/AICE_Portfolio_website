@@ -1,0 +1,131 @@
+/* style.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #eaeaea;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1, header p {
+    margin: 0;
+}
+
+section {
+    padding: 40px 20px;
+    transition: all 0.3s ease;
+}
+
+#bio, #portfolio {
+    background: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.bio-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bio-text, .bio-image {
+    flex: 1;
+}
+
+.bio-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 2%;
+    margin-left: 20px;
+}
+
+h2 {
+    color: #0072ff;
+}
+
+.project iframe {
+    width: 80%;
+    height: 400px; /* Adjust based on your preference */
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+footer {
+    background: #0072ff;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer .contact-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px; /* Adjust icon size as needed */
+    transition: color 0.3s ease;
+}
+
+footer .contact-icons a:hover {
+    color: #ffc107; /* Highlight color on hover */
+}
+
+/* Additional styling as needed for the footer */
+footer p, footer a {
+    margin: 10px 0;
+}
+footer h2{
+    color: white;
+}
+
+/* Adjust the hover effect for links to remove text-decoration */
+a:hover, footer a:hover {
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .bio-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bio-image img {
+        margin: 20px 0;
+        max-width: 200px;
+        margin-left: 0;
+    }
+
+    .project iframe {
+        height: 300px; /* Adjust for better mobile viewing */
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    animation: fadeIn 1s ease-out;
+}
